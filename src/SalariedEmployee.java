@@ -12,12 +12,13 @@ public class SalariedEmployee extends Employee{
     }
 
     public void retire(){
+        terminate("12/12/2025");
         this.isRetired = true;
     }
 
     @Override
     public double collectPay() {
-        return this.annualSalary / 12;
+        return this.annualSalary / 26;
     }
 
     @Override
