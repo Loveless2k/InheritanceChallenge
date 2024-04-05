@@ -11,15 +11,15 @@ public class Main {
                 8_000_000d, false);
         System.out.println(tebanz);
         System.out.println("Age = " + tebanz.getAge());
-        System.out.println("Pay = " + tebanz.collectPay());
+        System.out.println("Tebanz's Paycheck = $" + tebanz.collectPay());
         tebanz.retire();
-        tebanz.terminate("05/04/2024");
+        System.out.println("Tebanz's Pension Paycheck = $" + tebanz.collectPay());
         System.out.println(tebanz);
 
         HourlyEmployee camila = new HourlyEmployee("Camila", "01/08/1994", "01/01/2024", 2000.0);
         System.out.println(camila);
         System.out.println("Age = " + camila.getAge());
-        System.out.println("Pay = " + camila.collectPay());
-        System.out.println("Pay + bonus = " + camila.getDoublePay());
+        System.out.println("Camila's Paycheck = $" + camila.collectPay());
+        System.out.println("Camila's Holiday Pay = $" + camila.getDoublePay());
     }
 }

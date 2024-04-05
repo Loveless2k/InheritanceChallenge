@@ -15,7 +15,7 @@ public class HourlyEmployee extends Employee{
 
     @Override
     public double collectPay() {
-        int workingHours = 9;
+        int workingHours = 40;
         return this.hourlyPayRate * workingHours;
     }
 
