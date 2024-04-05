@@ -18,7 +18,9 @@ public class SalariedEmployee extends Employee{
 
     @Override
     public double collectPay() {
-        return this.annualSalary / 26;
+        double paycheck = this.annualSalary / 26;
+        double adjustedPay = (isRetired) ? 0.9 * paycheck : paycheck;
+        return (int) adjustedPay;
     }
 
     @Override
